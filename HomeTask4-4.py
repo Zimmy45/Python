@@ -15,3 +15,7 @@ for i in range(0,k+1):
     elif i > 1 and list_koeffic[i] == 1: multi = 'x**'+str(i) +' + ' + multi
     elif i > 1 and list_koeffic[i] > 1: multi = str(list_koeffic[i])+'x**'+str(i) +' + ' + multi
 print(multi)
+print('Этот же результат записан в файл mnogochlen.txt. Проверьте.')
+f = open('mnogochlen.txt', 'w')
+f.write(multi)
+f.close()
