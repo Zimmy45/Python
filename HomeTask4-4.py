@@ -14,5 +14,4 @@ for i in range(0,k+1):
     elif i > 1 and list_koeffic[i] == 0: multi = '' + multi
     elif i > 1 and list_koeffic[i] == 1: multi = 'x**'+str(i) +' + ' + multi
     elif i > 1 and list_koeffic[i] > 1: multi = str(list_koeffic[i])+'x**'+str(i) +' + ' + multi
-
 print(multi)
