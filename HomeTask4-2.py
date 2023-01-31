@@ -1,5 +1,6 @@
 import math
 n = int(input('Введите натуральное число N: '))
+n2 = n
 list = []
 d = 2
 while d*d <= n:
@@ -10,5 +11,5 @@ while d*d <= n:
         d += 1
 if n > 1:
     list.append(n)
-print('Список простых множителей для числа ', n, ':')
-print(list)
+print('Список простых множителей для числа ', n2, ':')
+print(set(list))
